@@ -2,7 +2,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,700&display=swap');
 :root {
-    --primary-color:#7C3AED;
+    --primary-color:#065F46;
     --dark-gray:#9CA3AF;
     --light-gray: #F3F4F6;
  
@@ -12,7 +12,11 @@ body {
     margin: 0px;
 }
 .mySlides {display: none}
- img {vertical-align: middle;}
+ img {
+     vertical-align: middle;
+     width: 1300px;
+
+}
  * {box-sizing: border-box}
 
 hr {
@@ -27,7 +31,11 @@ hr {
 
 .container-center {
     max-width: 600px;
-    margin: auto;
+    margin: right;
+}
+.container-side {
+    max-width: 500px;
+    float: right;
 }
 
 /* links primary and secondary */
@@ -120,7 +128,7 @@ hr {
     color: white;
     text-align:center;
     border-top-right-radius: 1rem;
-
+    float: none;
 }
 .footer-header {
     font-weight: bold;
@@ -147,18 +155,27 @@ hr {
     width: 30%;
     height: 400px;
     border: 2px solid;
-    background-color: rgb(0, 140, 255);
+    background-color: #064E3B;
+    border-radius: 1rem;
+    color: whitesmoke;
 }
 .sidesection-description {
     padding: 1rem;
 }
+.sidesection-image {
+    padding: 1rem;
+    width:100%;
+}
+
 
 /** slide show */
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 1300px;
     position: relative;
     margin: auto;
+    padding-top: 3rem;
+
   }
   
   /* Next & previous buttons */
@@ -219,6 +236,7 @@ hr {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    margin-bottom: 2rem;
   }
   
   .active, .dot:hover {
@@ -247,3 +265,46 @@ hr {
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
   }
+
+  /*3in1 section */
+  .section-3in1 {
+      margin: 2rem 0rem 45rem 0rem;
+
+
+  }
+  .section-left{
+      width: 30%;
+      height: 605px;
+      float: left;
+      background-color: red;
+      border: 1px solid black;
+      padding: 2rem;
+      margin-left: 1rem;
+      border-radius: 1rem;
+    }
+.section-left-img {
+    width: 300px;
+    height: 200px;
+}
+.section-left-description {
+    font-size: 2rem;
+    padding-top: 0.5rem;
+}
+
+.section-right-top {
+        width: 65%;
+        height: 300px;
+        float: left;
+        background-color: green;
+        border: 1px solid black;
+        margin: 0rem 0.5rem 0.5rem 0.5rem;
+        padding-top: 0rem;
+        padding-left: 1rem;
+        border-radius: 1rem;
+        
+}
+.section-right-top-img {
+    padding-top: 0.5rem;
+    width: 300px;
+    height: 200px;
+}
