@@ -5,11 +5,14 @@
     --primary-color:#065F46;
     --dark-gray:#9CA3AF;
     --light-gray: #F3F4F6;
+    --light-green: #6EE7B7;
+    
  
 }
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
+    background-color: rgba(82, 82, 82, 0.5);
 }
 .mySlides {display: none}
  img {
@@ -276,7 +279,7 @@ hr {
       width: 30%;
       height: 605px;
       float: left;
-      background-color: red;
+      background-color: var(--light-green);
       border: 1px solid black;
       padding: 2rem;
       margin-left: 1rem;
